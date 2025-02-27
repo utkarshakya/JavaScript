@@ -22,6 +22,8 @@ console.log(myDate.getSeconds());
 console.log(myDate.getMilliseconds());
 console.log(myDate.getTime());
 
+// NOTE: We also have the similar methods with set like setFullYear(), setMonth(), etc.
+
 // 2. to methods
 console.log(myDate.toString());
 console.log(myDate.toDateString());
