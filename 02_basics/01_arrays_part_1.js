@@ -4,13 +4,13 @@
 // In Simple Words An Array Is A Collection Values.
 // Javascript Arrays Are Resizable And Can Contain A Mix Of Different Data Types.
 // Note: Javascript Arrays Are Not Associative Like The String Does, Means
-// console.log(heros[-1]) Is Undefined But Negative Index Works In Strings.
+// console.log(heroes[-1]) Is Undefined But Negative Index Works In Strings.
 // Also Note: Javascript Array Copy Operation Creates A Shallow Copy Instead Of Deep Copy.
 // REMEMBER: Shallow Copy --> Uses Reference. But Deep Copy --> Completely Independent.
 
 const myArray = [3, 4, 5, 7];
-const heros = ["Wanda", "Hulk", "Spider-Men", "Sang-Chi", "Makkari"];
-// console.log(heros.length); // Used to get the length of the array. It  is the property of array.
+const heroes = ["Wanda", "Hulk", "Spider-Men", "Sang-Chi", "Makkari"];
+// console.log(heroes.length); // Used to get the length of the array. It  is the property of array.
 
 
 /*
@@ -23,7 +23,7 @@ const villains = new Array(
   "Dr. Strange"
 );
 
-console.log(`${heros[3]} vs ${villains[3]}`);
+console.log(`${heroes[3]} vs ${villains[3]}`);
 */
 
 
@@ -78,13 +78,13 @@ console.log(myArray.join("-"));
 // --- --- Slice() & Splice() Method --- ---
 
 console.log(`\n--- Original Array ---`);
-console.log(heros);
+console.log(heroes);
 
 console.log(`\n--- slice() Method ----`);
-console.log(heros.slice(0, 3)); // Example 1
-console.log(heros.slice(2)); // Example 2
+console.log(heroes.slice(0, 3)); // Example 1
+console.log(heroes.slice(2)); // Example 2
 console.log(`--- Original Array After slice() ---`);
-console.log(heros);
+console.log(heroes);
 // slice() returns the sub-array from the given array.
 // It takes 2 arguments, start and end like this slice(start, end).
 // So we get a suu-array from start index to end (exclusive).
@@ -92,13 +92,16 @@ console.log(heros);
 // And in the example 2 we get sub-array from 2 to end (since end is not defined).
 
 console.log(`\n--- splice() Method ----`);
-console.log(heros.splice(1, 2));
+console.log(heroes.splice(1, 3, "Dr. Strange", "Daredevil"));
 console.log(`--- Original Array After splice() ---`);
-console.log(heros);
+console.log(heroes);
 // splice() removes and returns the sub-array from the array.
-// It takes two arguments like this splice(start, deleteCount).
-// Here start is simply the start index and deleteCount is the number of elements to be removed.
-// Like the above example returns sub-array of 2 elements removed from the array starting from index 1.
+// It takes three arguments like this splice(start, deleteCount, ...elementsToAdd).
+// Here start is simply the start index and deleteCount is the number of elements to be removed from that start index.
+// And the elementsToAdd is actually any no. of elements you put after deleteCount are added to the array.
+// So we can also use splice to add elements anywhere in the array by simply writing them in splice and setting deleteCount to 0.
+// Like the above example returns sub-array with 2 elements removed from the array starting from index 1, and
+// add any number of elements written after the deleteCount into the array after the start index.
 // See the example output to make it clear.
 
 // REMEMBER splice() METHOD AFFECT THE ORIGINAL ARRAY BUT SLICE() DOESN'T.

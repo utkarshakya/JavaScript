@@ -3,17 +3,17 @@
 // --- --- --- MORE ON ARRAY --- --- ---
 
 /*
-let marvelHeros = ['Vision', 'Captain Marvel', 'Spider-Man'];
-let dcHeros = ['Victor', 'Wounder Women', 'Super-Man'];
+let marvelHeroes = ['Vision', 'Captain Marvel', 'Spider-Man'];
+let dcHeroes = ['Victor', 'Wounder Women', 'Super-Man'];
 
 // --- --- concat() Method --- ---
-let allHeros = marvelHeros.concat(dcHeros);
-console.log(allHeros);
+let allHeroes = marvelHeroes.concat(dcHeroes);
+console.log(allHeroes);
 // concat() method simply returns an new array after performing concatenation.
 
 // --- --- Spread Operator (...) --- ---
-let newHerosList = [...marvelHeros, ...dcHeros];
-console.log(newHerosList);
+let newHeroesList = [...marvelHeroes, ...dcHeroes];
+console.log(newHeroesList);
 // Spread Operator (...), In simple words spread the array or string into its individual elements.
 // See the output to understand clearly.
 */
