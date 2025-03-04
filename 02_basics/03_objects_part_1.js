@@ -13,7 +13,11 @@ const user = {
     isLoggedIn: false,
     lastLoggedInOn: ['Monday', 'Wednesday'],
     [key]: Symbol('HEKA-SJEK-AJSK'), // These square brackets is just a syntax of adding symbol in objects.
-    'Full Address': '342/32, Ulta, Heatwave, Ireland, 998123'
+    'Full Address': '342/32, Ulta, Heatwave, Ireland, 998123',
+    10: "One", // We can also use number as a key.
+    12: "Two",
+    8: "Three" // Notice this key in the object output, it will come at first.
+    // We can even have use 'undefined' and 'Null' as a key because it is treated as a string.
 }
 // This is how we simply create an object.
 // Here --> {key: value, .....} is the syntax.
@@ -28,6 +32,7 @@ console.log(user[key]);
 console.log(typeof(user[key]));
 console.log(user['Full Address']);
 console.log(typeof(user['Full Address']));
+console.log(user[10]);
 */
 
 /*
@@ -44,6 +49,9 @@ user.age = 18; // this will not take effect.
 console.log(user.age);
 // freeze() will simple lock user object, that means you can not delete or change it anymore.
 // See the above example output to get it.
+// --- seal() Method ---
+// It is similar to freeze() but the only differ is it allow modification and freeze doesn't allow anything.
+// That means we cannot delete or add any property in the object but we can modify if it is seal().
 */
 
 // --- We Can Also Add Function In Objects ---
