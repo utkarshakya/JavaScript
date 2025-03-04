@@ -35,11 +35,24 @@ console.log(daredevil.hasOwnProperty('friend'));
 // --- DESTRUCTURING OF OBJECT ---
 const {occupation: op} = daredevil;
 const {enemy} = daredevil;
+const {name: fullName, ...remaining} = daredevil;
 console.log(op);
 console.log(enemy);
-// This is how we destructure objects. Not we can directly use the occupation key as op of the
-// daredevil object, see the output.
-// We can also destructure arrays, will talk about it later.
+console.log(fullName);
+console.log(remaining); // 'remaining' will contains all the remaining values except 'name' (here this ... know as rest operator) 
+// This is how we destructure objects. We can name the keys as we did above for occupation as op and name as fullName.
+/*
+// We Can Also Destructure Arrays like:
+const arr = [1,2,3,4];
+const [hello, , ...ping] = arr;
+console.log(hello);
+console.log(ping);
+// we can skip an element by just leaving its space(its position) empty as we did above.
+*/
+// NOTE: We can also destructure nested elements using this (key: name) syntax like
+// for example, if an objet = {name: "Utkarsh", likedMovies: {horror: "Annabelle Creation", scienceFiction: "Mother Android", documentary: "The Social Dilemma"}}
+// then we can simply access a nested element value like -> const {likedMovies: {scienceFiction}} = object;
+// this is how we can get the value of nested scienceFiction. and it work same with arrays.
 
 
 // WHILE DEALING WITH API, WE GET RESPONSE IN OBJECTS OR ARRAY OF OBJECTS (KNOWN AS JSON).
