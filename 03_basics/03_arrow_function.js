@@ -27,7 +27,7 @@ const arrow = (n1, n2) => {
 // This is how we simply define an arrow function, it's simple we don't use function keyword
 // before parameters and use one => symbol after parameters. That's it.
 
-// There is one term know as Implicit Return, it basically a way of returning a function.
+// There is one term know as Implicit Return, it basically a way of returning something from a function.
 const subtractTwo = (n1, n2) => n1 - n2
 console.log(subtractTwo(4, 3))
 const numberCount = (n1, ...n2) => (`Total numbers Entered: ${[n1, ...n2].length}`)
@@ -35,3 +35,7 @@ console.log(numberCount(4, 3, 3, 5, 6))
 // This is how we use implicit return. It is often used with arrow function in one line.
 // NOTE: While returning complex things like objects, arrays, etc we enclose them in () see above in
 // subtractTwo we simply return the n1-n2 but it is always a good practice to use () while implicit return.
+
+// If we have only one parameter in am arrow function we can also ignore the () of the parameter like
+// const cube = number => number*number*number
+// So, Yeah This above line of code is also work fine and it is indeed a arrow functions.

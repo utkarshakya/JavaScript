@@ -34,7 +34,7 @@ function loginUserMessage(username){
     console.log(`Hello, ${username} You Just Logged In`)
     return 0
 }
-let user = loginUserMessage('komodo32')
+let user = loginUserMessage('comodo')
 // Don't worry about condition right now we'll cover them later.
 */
 
@@ -55,5 +55,5 @@ console.log(items);
 function returnSecondValue(getArrayOrObject) {
     return getArrayOrObject[1]
 }
-console.log(returnSecondValue({ 0: 'Nagraj', 1: 'Chandaal', 2: 'Hemant', 3: 'Pisachni' }))
+console.log(returnSecondValue({ 0: 'Nagraj', 1: 'Chandaal', 2: 'Hemant', 3: 'Pishachini' }))
 console.log(returnSecondValue(['Hanuman', 'Ashwatthama', 'Vibhishana', 'Parashurama']))
