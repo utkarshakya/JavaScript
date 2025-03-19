@@ -23,12 +23,12 @@ for (const element of message) {
 
 /*
 // Objects are not iterable using for of loop, see the below output.
-const heros = {
+const heroes = {
     1: "Abhimanyu",
     2: "Karna",
     3: "Arjun"
 }
-for (const element of heros) {
+for (const element of heroes) {
     console.log(element);
 }
 */
