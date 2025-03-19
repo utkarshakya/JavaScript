@@ -16,7 +16,7 @@ Welcome to the JavaScript Learning Docs repository! This repository is designed 
 1. **Clone the Repository:** Start by cloning this repository to your local machine using the following command:
 
     ```sh
-    git clone https://github.com/your-username/javascript-learning-docs.git
+    git clone https://github.com/utkarshakya/JavaScript.git
     ```
 
 2. **Navigate Through the Files:** Explore the directories and files to find the topics you are interested in. Each file contains code examples and comments explaining the concepts.
