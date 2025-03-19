@@ -18,4 +18,12 @@ for(const key in villains){
 }
 // This how we can simply use it with arrays.
 
-// NOTE; Maps are not iterable with for in loop.
+// NOTE: Maps are not iterable with for in loop.
+// We can use for in loop with objects and arrays.
+// But it's not recommended to use for in loop with arrays, as it can also iterate to inherited properties.
+// Which can be a problem sometimes. So, use it with objects only.
+// We'll discuss maps in detail later.
+// That's it for now.
+
+// TO KNOW MORE ABOUT INHERITED PROPERTIES AND THE OBJECT DESCRIPTORS 
+// CHECK THE 'Object_Descriptors.md' FILE IN THE FOLDER NAMELY 'Extra'.
