@@ -32,5 +32,3 @@ let myRecords = books.filter((e) => e.genre === "Fiction");
 // let myRecords = books.filter(({genre}) => genre === "Fiction"); // Here we destructure the object, it also work the fine.
 console.log(myRecords);
 // So you see in the output, filter make things so easy.
-
-// Filter also takes the same three arguments like arr.filter((num, index, arr) => return_statement)

@@ -31,7 +31,7 @@ coding.forEach(see);
 */
 
 
-// --- forEach loop also takes index and array ---
+// --- forEach loop also takes index and array (filter and map also has the same) ---
 
 /*
 coding.forEach((value, index, arr) => {

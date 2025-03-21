@@ -8,7 +8,7 @@ console.log(result);
 result = arr.map(e => e * 10);
 console.log(result);
 // Now it works, see the output it make things clear.
-// So this is how we use Map and now you can differentiate Map with filters.
+// So this is how we use Map and now you can differentiate Map with filter.
 
 // --- Chaining ---
 console.log("\n--- Chaining ---");
