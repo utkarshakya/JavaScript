@@ -7,7 +7,7 @@ const arr = [1, 2, 3, 4, 5];
 for (const num of arr) {
     console.log(num);
 }
-// That's it, this make things very simply. for of loop automatically iterate to every element of the array.
+// That's it, this make things very simply. 'for of' loop automatically iterate to every element of the array.
 // We don't need to specify the length as we do with normal for/while loop.
 */
 
@@ -34,7 +34,7 @@ for (const element of heroes) {
 */
 
 
-// But there is one thing very similar or objects known as map is iterable.
+// Unlike regular objects, a Map is iterable and works seamlessly with the 'for...of' loop.
 // Don't worry we'll discuss maps in details later. Here is simple use.
 const map = new Map();
 map.set("Immortal", "Bhishma");
