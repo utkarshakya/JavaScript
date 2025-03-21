@@ -8,12 +8,12 @@ coding.forEach(function (value) {
     console.log(value);
 })
 console.log("\n"); // just for better output vision.
-// forEach loop takes call back function, In call back function we don't specify name of function.
+// forEach loop takes callback function, In callback function we don't specify name of function.
 // As you can see above we didn't give name of the function in the above example.
 
 
-// We can also use arrow function as call back function.
-// Remember we define arrow functions as: let message = () => {};
+// We can also use arrow function as a callback function.
+// Remember we define arrow functions as: let func = () => {};
 // Since we don't need to define name, we can make it like the one given below.
 coding.forEach((element) => {
     console.log(element);
@@ -21,7 +21,7 @@ coding.forEach((element) => {
 console.log("\n"); // just for better output vision.
 
 
-// We can also it like given below, i.e. define function outside and pass it as an argument.
+// We can also define function outside and pass it as an argument, like given below.
 function see(value){
     console.log(value);
 }
@@ -41,7 +41,7 @@ coding.forEach((value, index, arr) => {
 */
 
 // --- More ---
-const heros = [
+const heroes = [
     {
         heroName: "Saktimaan",
         powers: ["Superhuman Strength", "Superhuman Speed", "Heat Generation", "Shape Shifting", "Stamina", "Light Projection"]
@@ -56,7 +56,7 @@ const heros = [
     }
 ]
 // Now using forEach loop we can simply access any value of this complex structure.
-heros.forEach(element => {
+heroes.forEach(element => {
     console.log(element.heroName);
 })
 // See the output, we simply get heroName.
