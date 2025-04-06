@@ -69,3 +69,12 @@
 - API Request
 - Promise
 - Fetch
+
+## 08_oops
+
+- Basics
+- Prototype
+
+## 09_More
+
+- Set
